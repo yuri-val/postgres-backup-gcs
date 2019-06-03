@@ -31,7 +31,7 @@ if [ -z $BACKUP_NAME ]; then
 fi
 
 CURRENT_DATE=$(date -u +"%Y-%m-%dT%H%M%SZ")
-BACKUP_SET="$BACKUP_NAME-$CURRENT_DATE"
+BACKUP_SET="$BACKUP_NAME-$CURRENT_DATE.sql"
 
 echo "Activating google credentials before beginning"
 gcloud auth activate-service-account --key-file "$GOOGLE_APPLICATION_CREDENTIALS"
