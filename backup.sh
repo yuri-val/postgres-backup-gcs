@@ -42,7 +42,7 @@ if [ $? -ne 0 ] ; then
 fi
 
 echo "=============== Postgres Backup ==============================="
-echo "Beginning backup from $POSTGRES_HOST to /data/$BACKUP_SET"
+echo "Beginning backup from $PGHOST to /data/$BACKUP_SET"
 echo "To google storage bucket $GCS_BUCKET_POSTGRES using credentials located at $GOOGLE_APPLICATION_CREDENTIALS"
 echo "============================================================"
 
