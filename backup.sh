@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu pipefail
+
 if [ -z $PGHOST ] ; then
     echo "You must specify a PGHOST env var"
     exit 1
