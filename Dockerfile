@@ -1,4 +1,4 @@
-FROM postgres:13
+FROM postgres
 RUN apt-get update && apt-get install -y curl python3
 # Install google cloud sdk (gcloud and gsutil used in backup.sh)
 RUN curl -sSL https://sdk.cloud.google.com | bash
